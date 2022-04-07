@@ -1,17 +1,12 @@
 
 import './App.css';
-import Button from './Button/Button';
+import ToolBar from './ToolBar/ToolBar';
 function App() {
   return (
-    <div>
-      <Button onSmash={() => alert('Playing!')}>
-        Play Movie
-      </Button>
-      <Button onSmash={() => alert('Uploading!')}>
-        Upload Image
-      </Button>
-    </div>
-
+    <ToolBar
+    onPlayMovie={() => alert('Playing!')}
+    onUploadImage={() => alert('Uploading!')}
+  />
   );
 }
 
