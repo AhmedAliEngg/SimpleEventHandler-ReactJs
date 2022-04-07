@@ -1,12 +1,15 @@
 
 import './App.css';
-import PlayingButton from './PlayingButton/PlayingButton';
-import UploadImage from './UploadImage/UploadImage';
+import Button from './Button/Button';
 function App() {
   return (
     <div>
-      <PlayingButton movieName="Kiki's Delivery Service"/>
-      <UploadImage/>
+      <Button onSmash={() => alert('Playing!')}>
+        Play Movie
+      </Button>
+      <Button onSmash={() => alert('Uploading!')}>
+        Upload Image
+      </Button>
     </div>
 
   );

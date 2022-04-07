@@ -1,7 +1,7 @@
 import React from "react";
-const Button = ({onClick,children})=>{
+const Button = ({onSmash,children})=>{
     return(
-        <button onClick={onClick}>
+        <button onClick={onSmash}>
             {children}
         </button>
     )
