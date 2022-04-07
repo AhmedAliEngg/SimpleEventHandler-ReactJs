@@ -1,22 +1,12 @@
 
 import './App.css';
-// import handler from './Button/Button';
-import AlertButton from './ReadingProps/ReadingProps';
+import PlayingButton from './PlayingButton/PlayingButton';
+import UploadImage from './UploadImage/UploadImage';
 function App() {
   return (
-    // <button onClick={handler}>
-    //   Click me
-    // </button>
-    // <button onClick={() => {
-    //   alert('You clicked me!');
-    // }}></button>
     <div>
-      <AlertButton message="Playing!">
-        Playing
-      </AlertButton>
-      <AlertButton message="Uploading!">
-        Upload Image
-      </AlertButton>
+      <PlayingButton movieName="Kiki's Delivery Service"/>
+      <UploadImage/>
     </div>
 
   );
