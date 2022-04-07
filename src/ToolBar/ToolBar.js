@@ -1,12 +1,14 @@
 import React from "react";
 import Button from "../Button/Button";
-const ToolBar = ({ onPlayMovie, onUploadImage }) => {
+const ToolBar = () => {
     return (
-        <div>
-            <Button onClick={onPlayMovie}>
+        <div onClick={()=>{
+            alert("You Clicked on ToolBar")
+        }}>
+            <Button  onClick={() => alert('Playing!')}>
                 Play Movie
             </Button>
-            <Button onClick={onUploadImage}>
+            <Button onClick={() => alert('Uploading!')}>
                 Upload Image
             </Button>
         </div>
